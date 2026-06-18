@@ -13,16 +13,6 @@ The SMS Spam Classifier is a Machine Learning project that classifies SMS messag
 * User-friendly prediction interface
 * High accuracy on test data
 
-## Technologies Used
-
-* Python
-* Pandas
-* NumPy
-* Scikit-Learn
-* NLTK
-* TF-IDF Vectorizer
-* Naive Bayes Classifier
-* Streamlit (Optional for deployment)
 
 ## Dataset
 
@@ -31,8 +21,6 @@ The project uses the SMS Spam Collection Dataset containing thousands of labeled
 * Spam
 * Ham (Not Spam)
 
-Dataset Source:
-https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset
 
 ## Project Workflow
 
@@ -212,50 +200,7 @@ The application will start running on `http://127.0.0.1:5000/`
 3. Click the **"Predict"** or **"Classify"** button
 4. View the prediction result: **HAM** (legitimate) or **SPAM**
 
-### Example Messages to Try:
 
-**Spam Example:**
-```
-Congratulations! You've won a $1000 gift card. Click here to claim now!
-```
-
-**Ham Example:**
-```
-Hey, are we still meeting for lunch tomorrow at 1pm?
-```
-
-## 🧠 Model and Methodology
-
-The classification pipeline consists of two main components:
-
-### 1. Text Vectorization
-- **Technique**: TF-IDF (Term Frequency-Inverse Document Frequency)
-- **Purpose**: Converts raw text messages into numerical feature vectors
-- **File**: `vectorizer.pkl`
-
-### 2. Classification Model
-- **Algorithm**: Machine Learning classifier (trained in `sms-spam-classify.ipynb`)
-- **Training Data**: SMS spam dataset (`spam.csv`)
-- **File**: `model.pkl`
-
-### Model Pipeline:
-1. Input SMS text → TF-IDF Vectorizer → Numerical features
-2. Numerical features → Trained Classifier → Prediction (Spam/Ham)
-
-## 📊 Dataset
-
-The model is trained on `spam.csv`, a collection of SMS messages labeled as spam or ham. The dataset includes:
-- Legitimate messages (Ham)
-- Spam messages from various sources
-- Pre-processed and cleaned text data
-
-## 🔧 Development
-
-To retrain the model or explore the training process:
-
-1. Open `sms-spam-classify.ipynb` in Jupyter Notebook or JupyterLab
-2. Follow the notebook cells to see data exploration, preprocessing, and model training
-3. Modify hyperparameters or try different algorithms as needed
 
 
 ## Dataset
