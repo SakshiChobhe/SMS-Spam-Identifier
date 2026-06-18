@@ -1,18 +1,127 @@
-# SMS Spam Classifier 📱🛡️
+# SMS Spam Classifier
 
-![SMS Spam Classifier Demo](SS/demo1.png)
+## Overview
 
-## 🧐 Overview
+The SMS Spam Classifier is a Machine Learning project that classifies SMS messages as **Spam** or **Ham (Not Spam)** using Natural Language Processing (NLP) techniques. The model is trained on a labeled SMS dataset and uses text preprocessing, TF-IDF vectorization, and machine learning algorithms to achieve accurate predictions.
 
-This is a **Web Application** built using **Flask** that classifies a given SMS message as either **Spam** or **Ham** (not spam). The application utilizes a pre-trained Machine Learning model to provide real-time classification through a simple and intuitive web interface.
+## Features
 
-## 🌟 Features
+* Classifies SMS messages as Spam or Ham
+* Text preprocessing and cleaning
+* TF-IDF feature extraction
+* Machine Learning-based classification
+* User-friendly prediction interface
+* High accuracy on test data
 
-* **Real-time Classification**: Input an SMS text and get an instant prediction
-* **High Accuracy**: Trained on a comprehensive SMS spam dataset
-* **Simple Web Interface**: Built with HTML/CSS for a user-friendly experience
-* **Robust Model**: Uses an effective machine learning classifier for accurate predictions
-* **Lightweight**: Fast prediction with pre-trained models
+## Technologies Used
+
+* Python
+* Pandas
+* NumPy
+* Scikit-Learn
+* NLTK
+* TF-IDF Vectorizer
+* Naive Bayes Classifier
+* Streamlit (Optional for deployment)
+
+## Dataset
+
+The project uses the SMS Spam Collection Dataset containing thousands of labeled SMS messages categorized as:
+
+* Spam
+* Ham (Not Spam)
+
+Dataset Source:
+https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset
+
+## Project Workflow
+
+1. Data Collection
+2. Data Cleaning
+3. Text Preprocessing
+
+   * Lowercasing
+   * Tokenization
+   * Stopword Removal
+   * Stemming
+4. Feature Extraction using TF-IDF
+5. Model Training
+6. Model Evaluation
+7. Spam Prediction
+
+## Model Performance
+
+| Metric    | Score |
+| --------- | ----- |
+| Accuracy  | 95%+  |
+| Precision | High  |
+| Recall    | High  |
+| F1 Score  | High  |
+
+*Performance may vary depending on preprocessing and model configuration.*
+
+## Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/your-username/sms-spam-classifier.git
+```
+
+Navigate to the project directory:
+
+```bash
+cd sms-spam-classifier
+```
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Run the application:
+
+```bash
+python app.py
+```
+
+## Example
+
+Input:
+
+```text
+Congratulations! You have won a free lottery ticket. Claim now!
+```
+
+Output:
+
+```text
+Spam
+```
+
+Input:
+
+```text
+Hey, are we still meeting at 5 PM today?
+```
+
+Output:
+
+```text
+Ham
+```
+
+## Future Improvements
+
+* Deep Learning implementation using LSTM
+* BERT-based text classification
+* Web deployment with Streamlit
+* Multi-language spam detection
+* Real-time SMS filtering
+
+
+
 
 ## 📸 Screenshots
 
@@ -155,12 +264,7 @@ To retrain the model or explore the training process:
 
 ## 👨‍💻 Author
 
-**Atharva Shinde**
-- X | Twitter : [@Atharva98983](https://x.com/Atharva98983)
-- LinkedIn: [Atharva](https://www.linkedin.com/in/atharva-shinde-13b478276/)
+Sakshi Chobhe
 
-## 🙏 Acknowledgments
- 
-- Inspiration from various SMS spam detection projects
-- Flask and Scikit-learn documentation
+
 
